@@ -1,0 +1,23 @@
+language: node_js
+node_js: lts/carbon
+services:
+  - docker
+addons:
+  apt:
+    packages:
+    - libsecret-1-0
+script:
+  - chmod +x ./scripts/docker-deploy.sh
+deploy:
+  - provider: npm
+    api_key: $NPM_TOKEN
+    on:
+      tags: true
+      repo: pofallon/twine
+    email: $NPM_EMAIL
+  - provider: script
+    script: bash ./scripts/docker-deploy.sh
+    skip_cleanup: true
+    on:
+      tags: true
+      repo: pofallon/twine
