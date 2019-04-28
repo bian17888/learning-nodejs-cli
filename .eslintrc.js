@@ -1,7 +1,10 @@
 module.exports = {
-  extends: "standard",
   env: {
     node: true,
-    mocha: true
+    mocha: true,
+    es6: true
+  },
+  parserOptions: {
+    ecmaVersion: 2017
   }
 };
