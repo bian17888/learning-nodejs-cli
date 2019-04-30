@@ -1,6 +1,6 @@
 {
-  "name": "@pofallon/twine",
-  "version": "1.0.7",
+  "name": "@beck/twine",
+  "version": "1.0.0",
   "description": "A command line Twitter client",
   "bin": {
     "twine": "./bin/twine.js"
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pofallon/twine.git"
+    "url": "git+git@github.com:bian17888/learning-nodejs-cli.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pofallon/twine/issues"
+    "url": "https://github.com/bian17888/learning-nodejs-cli/issues"
   },
-  "homepage": "https://github.com/pofallon/twine#readme",
+  "homepage": "https://github.com/bian17888/learning-nodejs-cli",
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
