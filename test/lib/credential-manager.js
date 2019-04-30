@@ -30,10 +30,9 @@ describe("a credential manager", () => {
     expect(creds.getKeyAndSecrect()).to.be.rejected();
   });
 
-  after(done => {
-    fs.unlink(
-      path.join(process.env.HOME, ".config", "configstore", name + ".json"),
-      done
+  after(() => {
+    fs.unlinkSync(
+      path.join(process.env.HOME, ".config", "configstore", name + ".json")
     );
   });
 });
