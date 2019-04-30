@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 
 const CredentialManager = require("../lib/credential-manager");
-const util = require();
+const util = require("../lib/util");
 
 const configure = {
   async consumer(name) {
