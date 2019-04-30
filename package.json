@@ -9,7 +9,7 @@
     "access": "public"
   },
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "nyc mocha --recursive"
   },
   "repository": {
     "type": "git",

@@ -20,6 +20,7 @@ describe("a credential manager", () => {
   });
 
   it("should add credentials when none are found ", async () => {
+    // TODO : 学完 sinon 后优化下
     sinon.stub(inquirer, "prompt").resolves({
       key: "two",
       secret: "two-secret"
