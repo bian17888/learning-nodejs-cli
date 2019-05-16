@@ -20,7 +20,7 @@ const configure = {
         validate: util.notEmpty
       }
     ]);
-    cred.storeKeyAndSecrect(answers.key, answers.secret);
+    cred.storeKeyAndSecrect('apiKey', answers.secret);
   }
 };
 
